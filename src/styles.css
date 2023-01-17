@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  background-color: black;
+  padding: 0 100px;
+}
+
+.expo-anim {
+  width: 220px;
+  height: 388px;
+  margin: 0 auto;
+
+  background-image: url("./startAni.png");
+  animation: playX 5.5s steps(18), playY 6s steps(6);
+}
+
+@keyframes playX {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -3960px;
+  }
+}
+
+@keyframes playY {
+  from {
+    background-position-y: 0px;
+  }
+  to {
+    background-position-y: -2328px;
+  }
+}
